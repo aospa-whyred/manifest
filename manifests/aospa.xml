@@ -6,7 +6,7 @@
 
   <!-- Build repositories -->
   <remove-project name="platform/build" />
-  <project path="build/make" name="AOSPA/android_build" remote="aospa" groups="aospa" >
+  <project path="build/make" name="aospa-whyred/android_build" remote="github" revision="quartz" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -18,7 +18,7 @@
   <remove-project name="platform/build/blueprint" />
   <project path="build/blueprint" name="AOSPA/android_build_blueprint" remote="aospa" groups="aospa" />
   <remove-project name="platform/build/soong" />
-  <project path="build/soong" name="AOSPA/android_build_soong" remote="aospa" groups="aospa" >
+  <project path="build/soong" name="aospa-whyred/android_build_soong" remote="github" revision="quartz" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -28,7 +28,7 @@
   <remove-project name="device/generic/goldfish" />
   <project path="device/generic/goldfish" name="AOSPA/android_device_generic_goldfish" remote="aospa" groups="aospa" />
   <remove-project name="device/qcom/sepolicy" />
-  <project path="device/qcom/sepolicy" name="AOSPA/android_device_qcom_sepolicy" remote="aospa" groups="aospa" />
+  <project path="device/qcom/sepolicy" name="aospa-whyred/android_device_qcom_sepolicy" remote="github" revision="quartz" />
   <project path="device/pa/sepolicy" name="AOSPA/android_device_pa_sepolicy" remote="aospa" groups="aospa" />
 
   <!-- Hardware -->
@@ -61,7 +61,7 @@
   <remove-project name="platform/frameworks/av" />
   <project path="frameworks/av" name="AOSPA/android_frameworks_av" remote="aospa" groups="aospa" />
   <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="AOSPA/android_frameworks_base" remote="aospa" groups="aospa" />
+  <project path="frameworks/base" name="aospa-whyred/android_frameworks_base" remote="github" revision="quartz" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="AOSPA/android_frameworks_native" remote="aospa" groups="aospa" />
   <remove-project name="platform/frameworks/opt/net/wifi" />
@@ -79,7 +79,7 @@
   <project path="packages/apps/ParanoidLauncher" name="AOSPA/android_packages_apps_ParanoidLauncher" remote="aospa" groups="aospa" />
   <project path="packages/apps/ParanoidPapers" name="AOSPA/android_packages_apps_ParanoidPapers" remote="aospa" groups="aospa" />
   <remove-project name="platform/packages/apps/Bluetooth" />
-  <project path="packages/apps/Bluetooth" name="AOSPA/android_packages_apps_Bluetooth" remote="aospa" groups="aospa" />
+  <project path="packages/apps/Bluetooth" name="aospa-whyred/android_packages_apps_Bluetooth" remote="github" revision="quartz" />
   <remove-project name="platform/packages/apps/Messaging" />
   <project path="packages/apps/Messaging" name="AOSPA/android_packages_apps_Messaging" remote="aospa" groups="aospa" />
   <remove-project name="platform/packages/apps/Nfc" />
@@ -87,7 +87,7 @@
   <remove-project name="platform/packages/apps/PackageInstaller"/>
   <project path="packages/apps/PermissionController" name="AOSPA/android_packages_apps_PackageInstaller" remote="aospa" groups="aospa" />
   <remove-project name="platform/packages/apps/Settings" />
-  <project path="packages/apps/Settings" name="AOSPA/android_packages_apps_Settings" remote="aospa" groups="aospa" />
+  <project path="packages/apps/Settings" name="aospa-whyred/android_packages_apps_Settings" remote="github" revision="quartz" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <project path="packages/apps/SettingsIntelligence" name="AOSPA/android_packages_apps_SettingsIntelligence" remote="aospa" groups="aospa" />
   <remove-project name="platform/packages/apps/ThemePicker" />
@@ -169,7 +169,7 @@
   <remove-project name="platform/system/update_engine" />
   <project path="system/update_engine" name="AOSPA/android_system_update_engine" remote="aospa" groups="aospa" />
   <remove-project name="platform/system/vold" />
-  <project path="system/vold" name="AOSPA/android_system_vold" remote="aospa" groups="aospa" />
+  <project path="system/vold" name="aospa-whyred/android_system_vold" remote="github" revision="quartz" />
 
   <!-- Vendor -->
   <project path="vendor/pa" name="AOSPA/android_vendor_pa" remote="aospa" groups="aospa" >
